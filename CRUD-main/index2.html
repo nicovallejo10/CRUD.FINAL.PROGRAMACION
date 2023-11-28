@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drugstore CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Control de Stock </h2>
+    <a href="login.html">Cerrar Sesion</a>
+    <a href="index.html">Ir a Drugstore</a>
+    <br>
+    <form id="drugstoreForm">
+        <label for="productName2">Nombre del Producto:</label>
+        <input type="text" id="productName2" required>
+
+        <label for="price2">Precio:</label>
+        <input type="number" id="price2" required>
+
+        <label for="barcode2">Código de Barras:</label>
+        <input type="text" id="barcode2" required>
+
+        <label for="productType2">Tipo:</label>
+        <select id="productType2" required>
+            <option value="bebida">Bebida</option>
+            <option value="verdura">Verdura</option>
+            <option value="alimento">Alimento</option>
+            <option value="lacteos">Lácteos</option>
+        </select>
+        <input type="hidden" id="productId2">
+
+        <button type="button" class="agregar" onclick="addOrUpdateProduct2()">Agregar</button>
+    </form>
+    <br>
+    <table id="productTable2">
+        <tr>
+            <th>Nombre del Producto</th>
+            <th>Precio</th>
+            <th>Código de Barras</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+        </tr>
+    </table>
+    <br>
+    <script src="js/main2.js"></script>
+
+</body>
+
+</html>
